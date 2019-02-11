@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,cd,paramUrl.game_id,paramUrl.province,paramUrl.city,paramUrl.district,paramUrl.page
+01,,true,1,post,/club/fuzzySearch?,200,0,1,浙江省,杭州市,西湖区,2

@@ -1,0 +1,36 @@
+2017-07-24 09:41:22,390 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 ，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-24 09:41:22,390 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-24 09:41:22,390 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-24 09:41:22,391 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T102_UserCreateClub\T102_UserCreateClub_00\../config.properties
+2017-07-24 09:41:22,393 - ApiTestSuit - DEBUG - 加载配置文件成功...{'passwordInfo': 'password:xxxx', 'dbUsername': 'ecprodprod', 'reomveUrl': 'xxxx', 'username': 'xxxxx', 'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T102_UserCreateClub\\T102_UserCreateClub_00\\../config.properties', 'dbPassword': '', 'password': 'xxxx', 'loginUrl': '', 'dbType': None, 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'usernameInfo': 'account:xxxxx', 'configParase': <lib.configUtil.configParser object at 0x00000000038DB390>}
+2017-07-24 09:41:22,394 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T102_UserCreateClub\T102_UserCreateClub_00\testure/T102_UserCreateClub_00NormalTest.csv
+2017-07-24 09:41:22,395 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['httpType', 'priority', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'caseId', 'caseDesc', 'isRun'])
+2017-07-24 09:41:22,395 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['httpType', 'priority', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'caseId', 'caseDesc', 'isRun'])
+2017-07-24 09:41:22,397 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['httpType', 'priority', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'caseId', 'caseDesc', 'isRun'])
+2017-07-24 09:41:22,397 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['httpType', 'priority', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'caseId', 'caseDesc', 'isRun'])
+2017-07-24 09:41:22,397 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'httpType': 'GET', 'mapSendParam': {}, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'httpSendUrl': '/userCreateClub?&user_id=85', 'mapHttpHeadParam': {}, 'caseNum': 1, 'isRun': True, 'verfiyJson': None, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000038DBB00>, 'apiPath': '/userCreateClub?', 'priority': 1, 'csvList': None, 'caseId': '01', 'strSendText': None, 'httpSendHeaders': {}, 'exceptRetCode': 200, 'caseDesc': '', 'mapUserParam': {'paramUrl.user_id': '85'}, 'mapInsertDb': None, 'retMapDbAssert': None, 'mapPostUrlParam': {'user_id': '85'}, 'retMapJsonAssert': None, 'isNeedLogin': True}...
+2017-07-24 09:41:22,397 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-07-24 09:41:22,398 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-07-24 09:41:22,401 - T102_UserCreateClub_00NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-24 09:41:22,401 - ApiTestSuit - DEBUG - start run test....T102_UserCreateClub_00NormalTest
+2017-07-24 09:41:22,401 - ApiTestSuit - DEBUG - 
+2017-07-24 09:41:22,401 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-07-24 09:41:22,402 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-07-24 09:41:22,402 - T102_UserCreateClub_00NormalTest - INFO - before HttpTest in this..............
+2017-07-24 09:41:22,402 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-07-24 09:41:22,402 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-24 09:41:22,402 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-24 09:41:22,403 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-24 09:41:22,403 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-24 09:41:22,403 - httpRequest - DEBUG - requestGet...url: xxxx/userCreateClub?&user_id=85 , headers {}
+2017-07-24 09:41:22,437 - ApiTestSuit - WARNING - TestCase error....
+2017-07-24 09:41:22,437 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-07-24 09:41:22,438 - T102_UserCreateClub_00NormalTest - INFO - #################################　End Test　######################################

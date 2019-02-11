@@ -1,0 +1,47 @@
+2017-08-22 10:50:13,352 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-08-22 10:50:13,353 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-08-22 10:50:13,354 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-08-22 10:50:13,356 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T101_ClubCreate\config.properties
+2017-08-22 10:50:13,361 - ApiTestSuit - DEBUG - 加载配置文件成功...{'dbType': None, 'username': '//10.225.136.162', 'loginUrl': 'http://10.225.136.162', 'passwordInfo': 'http://10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000042E45F8>, 'configPath': 'E:\\sgs_QA\\桌游平台\\code\\pySuitTest\\test_case\\BoardGameApiTest\\T101_ClubCreate\\config.properties', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'dbPassword': '', 'reomveUrl': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'dbUsername': 'ecprodprod', 'password': '//10.225.136.162'}
+2017-08-22 10:50:13,363 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T101_ClubCreate\T101_ClubCreate_03\testure\T101_ClubCreate_03NormalTest.csv
+2017-08-22 10:50:13,366 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,367 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,369 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,371 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,373 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,374 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['paramUrl.district', 'paramUrl.game_id', 'paramUrl.phone', 'verifyReCode', 'paramUrl.city', 'apiPath', 'paramUrl.name', 'httpType', 'paramUrl.province', 'caseId', 'paramUrl.content', 'priority', 'isRun', 'paramUrl.user_id', 'paramUrl.img_url', 'cd', 'caseDesc'])
+2017-08-22 10:50:13,375 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'mapUserParam': {'paramUrl.user_id': '685', 'paramUrl.content': 'heihei', 'paramUrl.phone': '18758113455', 'paramUrl.city': '杭州市', 'paramUrl.district': '西湖区', 'paramUrl.name': '0822104901', 'paramUrl.game_id': '1', 'paramUrl.img_url': '1', 'paramUrl.province': '浙江省', 'cd': '0'}, 'mapSendParam': {}, 'retMapDbAssert': None, 'csvList': None, 'apiPath': '/club/create?', 'mapPostUrlParam': {'img_url': '1', 'name': '0822104901', 'content': 'heihei', 'province': '浙江省', 'game_id': '1', 'district': '西湖区', 'phone': '18758113455', 'city': '杭州市', 'user_id': '685'}, 'expectCd': '0', 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'logger': <logging.Logger object at 0x0000000003FE7D30>, 'mapHttpHeadParam': {}, 'httpSendHeaders': {}, 'verfiyJson': None, 'caseDesc': '', 'isRun': True, 'retMapJsonAssert': None, 'httpType': 'POST', 'priority': 1, 'mapInsertDb': None, 'caseNum': 2, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000042B9128>, 'strSendText': None, 'caseId': '01', 'isNeedLogin': True, 'httpSendUrl': '/club/create?&img_url=1&name=0822104901&content=heihei&province=浙江省&game_id=1&district=西湖区&phone=18758113455&city=杭州市&user_id=685', 'exceptRetCode': 200}...
+2017-08-22 10:50:13,376 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-08-22 10:50:13,378 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-08-22 10:50:26,331 - ApiTestSuit - INFO - #########################　Begin Test Method　#####################################
+2017-08-22 10:50:26,333 - ApiTestSuit - DEBUG - start run test....T101_ClubCreate_03NormalTest
+2017-08-22 10:50:26,335 - ApiTestSuit - DEBUG - 
+2017-08-22 10:50:26,337 - ApiTestSuit - STEP - 开始运行测试用例.....共有2个测试用例
+2017-08-22 10:50:26,340 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-08-22 10:50:26,342 - ApiTestSuit - INFO - before HttpTest in this..............
+2017-08-22 10:50:26,344 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-08-22 10:50:26,346 - ApiTestSuit - DEBUG - 运行用例description:
+2017-08-22 10:50:26,348 - ApiTestSuit - DEBUG - 开始登录....
+2017-08-22 10:50:26,350 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-08-22 10:50:26,351 - ApiTestSuit - INFO - 开始执行http方法....
+2017-08-22 10:50:26,790 - ApiTestSuit - INFO - 执行完毕....
+2017-08-22 10:50:26,791 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-08-22 10:50:59,837 - ApiTestSuit - INFO - 消息码对比成功....0
+2017-08-22 10:51:04,841 - ApiTestSuit - INFO - After HttpTest in this...............
+2017-08-22 10:51:07,129 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-08-22 10:51:10,711 - ApiTestSuit - STEP - 开始运行第 2 个测试用例
+2017-08-22 10:52:31,925 - ApiTestSuit - INFO - before HttpTest in this..............
+2017-08-22 10:52:37,240 - ApiTestSuit - DEBUG - 运行用例id:02
+2017-08-22 10:52:37,708 - ApiTestSuit - DEBUG - 运行用例description:
+2017-08-22 10:52:39,853 - ApiTestSuit - DEBUG - 开始登录....
+2017-08-22 10:52:41,817 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-08-22 10:52:42,256 - ApiTestSuit - INFO - 开始执行http方法....
+2017-08-22 10:54:46,595 - ApiTestSuit - INFO - 执行完毕....

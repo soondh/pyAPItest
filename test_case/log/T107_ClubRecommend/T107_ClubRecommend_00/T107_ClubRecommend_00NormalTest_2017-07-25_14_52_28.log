@@ -1,0 +1,41 @@
+2017-07-25 14:52:29,946 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-25 14:52:29,946 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-25 14:52:29,947 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-25 14:52:29,947 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T107_ClubRecommend\config.properties
+2017-07-25 14:52:29,951 - ApiTestSuit - DEBUG - 加载配置文件成功...{'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T107_ClubRecommend\\config.properties', 'passwordInfo': 'http://10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'reomveUrl': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'dbPassword': '', 'password': '//10.225.136.162', 'dbUsername': 'ecprodprod', 'username': '//10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000038B83C8>, 'dbType': None, 'loginUrl': 'http://10.225.136.162'}
+2017-07-25 14:52:29,951 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T107_ClubRecommend\T107_ClubRecommend_00\testure\T107_ClubRecommend_00NormalTest.csv
+2017-07-25 14:52:29,952 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['apiPath', 'paramUrl.city', 'verifyReCode', 'caseId', 'paramUrl.province', 'paramUrl.user_id', 'paramUrl.district', 'caseDesc', 'isRun', 'priority', 'httpType'])
+2017-07-25 14:52:29,952 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['apiPath', 'paramUrl.city', 'verifyReCode', 'caseId', 'paramUrl.province', 'paramUrl.user_id', 'paramUrl.district', 'caseDesc', 'isRun', 'priority', 'httpType'])
+2017-07-25 14:52:29,953 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['apiPath', 'paramUrl.city', 'verifyReCode', 'caseId', 'paramUrl.province', 'paramUrl.user_id', 'paramUrl.district', 'caseDesc', 'isRun', 'priority', 'httpType'])
+2017-07-25 14:52:29,953 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['apiPath', 'paramUrl.city', 'verifyReCode', 'caseId', 'paramUrl.province', 'paramUrl.user_id', 'paramUrl.district', 'caseDesc', 'isRun', 'priority', 'httpType'])
+2017-07-25 14:52:29,953 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'mapSendParam': {}, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000038B8AC8>, 'caseDesc': '', 'httpType': 'POST', 'httpSendUrl': '/club/recommend?&district=西湖区&city=杭州市&user_id=24&province=浙江省', 'caseNum': 1, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'exceptRetCode': 200, 'csvList': None, 'verfiyJson': None, 'mapUserParam': {'paramUrl.city': '杭州市', 'paramUrl.province': '浙江省', 'paramUrl.user_id': '24', 'paramUrl.district': '西湖区'}, 'strSendText': None, 'caseId': '01', 'mapHttpHeadParam': {}, 'retMapDbAssert': None, 'isRun': True, 'retMapJsonAssert': None, 'apiPath': '/club/recommend?', 'mapPostUrlParam': {'district': '西湖区', 'city': '杭州市', 'user_id': '24', 'province': '浙江省'}, 'isNeedLogin': True, 'priority': 1, 'httpSendHeaders': {}, 'mapInsertDb': None}...
+2017-07-25 14:52:29,953 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-07-25 14:52:29,953 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-07-25 14:52:29,954 - T107_ClubRecommend_00NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - start run test....T107_ClubRecommend_00NormalTest
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - 
+2017-07-25 14:52:29,954 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-07-25 14:52:29,954 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-07-25 14:52:29,954 - T107_ClubRecommend_00NormalTest - INFO - before HttpTest in this..............
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-25 14:52:29,954 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-25 14:52:29,955 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-25 14:52:29,955 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/recommend?&district=西湖区&city=杭州市&user_id=24&province=浙江省 , entity: None, headers {}
+2017-07-25 14:52:29,959 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-07-25 14:52:30,264 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/recommend?&district=%E8%A5%BF%E6%B9%96%E5%8C%BA&city=%E6%9D%AD%E5%B7%9E%E5%B8%82&user_id=24&province=%E6%B5%99%E6%B1%9F%E7%9C%81 HTTP/1.1" 200 None
+2017-07-25 14:52:30,265 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/recommend?&district=西湖区&city=杭州市&user_id=24&province=浙江省 , entity: {"cd":"0","msg":"","data":[{"game_name":"DNF","club_id":184,"club_name":"\u4eca\u5929\u7b2c\u4e00\u4e2a","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a","member_num":1,"user_name":"07121616","club_img":"http:\/\/10.225.136.162\/upload\/badage\/0c7700acfb189c3186591d8c34c14df7.jpg"},{"game_name":"DNF","club_id":215,"club_name":"addmadin","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a","member_num":1,"user_name":"07121617","club_img":"http:\/\/10.225.136.162\/upload\/badage\/5f77b3c6ac30af25d6c6b5d2e452efbe.jpg"},{"game_name":"DNF","club_id":231,"club_name":"nbhmmm","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a","member_num":1,"user_name":"vip","club_img":"http:\/\/10.225.136.162\/upload\/badage\/2cf9879e3a07afa780c69c3ffb661f4c.jpg"},{"game_name":"DNF","club_id":241,"club_name":"\u72c2\u6218\u58eb","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a","member_num":1,"user_name":"07031627","club_img":"http:\/\/10.225.136.162\/upload\/badage\/42f53c578cb53e4c88acd666f1066275.jpg"},{"game_name":"DNF","club_id":171,"user_name":"07111805","club_name":"nsndkdkk","city":"\u676d\u5dde\u5e02","district":"\u6c5f\u5e72\u533a","member_num":1,"club_img":"http:\/\/10.225.136.162\/upload\/badage\/170c42e60543b449918ebf28c10acb11.jpg"}]}
+2017-07-25 14:52:30,265 - ApiTestSuit - INFO - 执行完毕....
+2017-07-25 14:52:30,265 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-07-25 14:52:30,266 - T107_ClubRecommend_00NormalTest - INFO - After HttpTest in this...............
+2017-07-25 14:52:30,266 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-07-25 14:52:30,266 - T107_ClubRecommend_00NormalTest - INFO - #################################　End Test　######################################

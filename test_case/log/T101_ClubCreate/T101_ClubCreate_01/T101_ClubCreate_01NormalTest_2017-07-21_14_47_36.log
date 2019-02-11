@@ -1,0 +1,59 @@
+2017-07-21 14:47:37,391 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 ，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-21 14:47:37,391 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-21 14:47:37,391 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-21 14:47:37,391 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T101_ClubCreate\T101_ClubCreate_01\../config.properties
+2017-07-21 14:47:37,392 - ApiTestSuit - DEBUG - 加载配置文件成功...{'passwordInfo': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'password': '//10.225.136.162', 'username': '//10.225.136.162', 'dbType': None, 'reomveUrl': 'http://10.225.136.162', 'dbPassword': '', 'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T101_ClubCreate\\T101_ClubCreate_01\\../config.properties', 'configParase': <lib.configUtil.configParser object at 0x00000000038CEA90>, 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'dbUsername': 'ecprodprod', 'loginUrl': 'http://10.225.136.162'}
+2017-07-21 14:47:37,392 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T101_ClubCreate\T101_ClubCreate_01\testure/T101_ClubCreate_01NormalTest.csv
+2017-07-21 14:47:37,393 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,393 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,393 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,393 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,394 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,394 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['isRun', 'caseId', 'caseDesc', 'httpType', 'paramUrl.user_id', 'paramUrl.city', 'paramUrl.phone', 'paramUrl.game_id', 'paramUrl.province', 'paramUrl.district', 'paramUrl.img_url', 'paramUrl.name', 'paramUrl.content', 'priority', 'apiPath', 'verifyReCode'])
+2017-07-21 14:47:37,394 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'mapSendParam': {}, 'retMapJsonAssert': None, 'caseNum': 2, 'mapInsertDb': None, 'httpType': 'POST', 'strSendText': None, 'verfiyJson': None, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'apiPath': '/club/create?', 'csvList': None, 'exceptRetCode': 200, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000038B9080>, 'isRun': True, 'caseId': '01', 'httpSendHeaders': {}, 'caseDesc': '', 'isNeedLogin': True, 'mapHttpHeadParam': {}, 'mapUserParam': {'paramUrl.district': '西湖区', 'paramUrl.name': '0721144701', 'paramUrl.content': 'heihei', 'paramUrl.user_id': '130', 'paramUrl.city': '杭州市', 'paramUrl.phone': '18758113455', 'paramUrl.game_id': '1', 'paramUrl.province': '浙江省', 'paramUrl.img_url': '1'}, 'httpSendUrl': '/club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=杭州市&province=浙江省&name=0721144701&phone=18758113455&district=西湖区', 'mapPostUrlParam': {'user_id': '130', 'content': 'heihei', 'img_url': '1', 'game_id': '1', 'city': '杭州市', 'province': '浙江省', 'name': '0721144701', 'phone': '18758113455', 'district': '西湖区'}, 'retMapDbAssert': None, 'priority': 1}...
+2017-07-21 14:47:37,395 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-07-21 14:47:37,395 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-07-21 14:47:37,396 - T101_ClubCreate_01NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-21 14:47:37,396 - ApiTestSuit - DEBUG - start run test....T101_ClubCreate_01NormalTest
+2017-07-21 14:47:37,396 - ApiTestSuit - DEBUG - 
+2017-07-21 14:47:37,396 - ApiTestSuit - STEP - 开始运行测试用例.....共有2个测试用例
+2017-07-21 14:47:37,396 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-07-21 14:47:37,396 - T101_ClubCreate_01NormalTest - INFO - before HttpTest in this..............
+2017-07-21 14:47:37,396 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-07-21 14:47:37,396 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-21 14:47:37,396 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-21 14:47:37,397 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-21 14:47:37,397 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-21 14:47:37,397 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=杭州市&province=浙江省&name=0721144701&phone=18758113455&district=西湖区 , entity: None, headers {}
+2017-07-21 14:47:37,416 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-07-21 14:47:37,743 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=%E6%9D%AD%E5%B7%9E%E5%B8%82&province=%E6%B5%99%E6%B1%9F%E7%9C%81&name=0721144701&phone=18758113455&district=%E8%A5%BF%E6%B9%96%E5%8C%BA HTTP/1.1" 200 None
+2017-07-21 14:47:37,745 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=杭州市&province=浙江省&name=0721144701&phone=18758113455&district=西湖区 , entity: {"cd":"2","msg":"\u8be5\u4ff1\u4e50\u90e8\u5df2\u7ecf\u5b58\u5728","data":null}
+2017-07-21 14:47:37,745 - ApiTestSuit - INFO - 执行完毕....
+2017-07-21 14:47:37,745 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-07-21 14:47:37,745 - T101_ClubCreate_01NormalTest - INFO - After HttpTest in this...............
+2017-07-21 14:47:37,745 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-07-21 14:47:37,745 - ApiTestSuit - STEP - 开始运行第 2 个测试用例
+2017-07-21 14:47:37,745 - T101_ClubCreate_01NormalTest - INFO - before HttpTest in this..............
+2017-07-21 14:47:37,745 - ApiTestSuit - DEBUG - 运行用例id:02
+2017-07-21 14:47:37,745 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-21 14:47:37,745 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-21 14:47:37,745 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-21 14:47:37,746 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-21 14:47:37,746 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=杭州市&province=浙江省&name=0721144702&phone=18758113455&district=西湖区 , entity: None, headers {}
+2017-07-21 14:47:37,747 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-07-21 14:47:38,012 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=%E6%9D%AD%E5%B7%9E%E5%B8%82&province=%E6%B5%99%E6%B1%9F%E7%9C%81&name=0721144702&phone=18758113455&district=%E8%A5%BF%E6%B9%96%E5%8C%BA HTTP/1.1" 200 None
+2017-07-21 14:47:38,013 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/create?&user_id=130&content=heihei&img_url=1&game_id=1&city=杭州市&province=浙江省&name=0721144702&phone=18758113455&district=西湖区 , entity: {"cd":"2","msg":"\u8be5\u4ff1\u4e50\u90e8\u5df2\u7ecf\u5b58\u5728","data":null}
+2017-07-21 14:47:38,013 - ApiTestSuit - INFO - 执行完毕....
+2017-07-21 14:47:38,013 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-07-21 14:47:38,013 - T101_ClubCreate_01NormalTest - INFO - After HttpTest in this...............
+2017-07-21 14:47:38,013 - ApiTestSuit - STEP - 运行第 2 个用例完毕....
+
+2017-07-21 14:47:38,013 - T101_ClubCreate_01NormalTest - INFO - #################################　End Test　######################################

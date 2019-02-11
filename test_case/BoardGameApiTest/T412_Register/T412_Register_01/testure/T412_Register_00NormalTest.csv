@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,paramUrl.username,paramUrl.password
+01,,true,1,post,/register?,200,0804144922,

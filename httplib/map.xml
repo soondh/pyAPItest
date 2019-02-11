@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile name="classMap">
+
+<doLogin>
+    <domain include="microstrategy">
+            <password></password>
+            <username></username>
+            <email></email>
+    </domain>
+</doLogin>
+</profile>

@@ -1,0 +1,14 @@
+2017-08-25 15:58:02,756 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-08-25 15:58:02,756 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-08-25 15:58:02,756 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-08-25 15:58:02,756 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T414_UserDynamic\config.properties
+2017-08-25 15:58:02,757 - ApiTestSuit - DEBUG - 加载配置文件成功...{'username': '//10.225.136.162', 'dbUsername': 'ecprodprod', 'password': '//10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'configPath': 'E:\\sgs_QA\\桌游平台\\code\\pySuitTest\\test_case\\BoardGameApiTest\\T414_UserDynamic\\config.properties', 'passwordInfo': 'http://10.225.136.162', 'dbType': None, 'loginUrl': 'http://10.225.136.162', 'dbPassword': '', 'configParase': <lib.configUtil.configParser object at 0x0000000003478D30>, 'reomveUrl': 'http://10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8'}
+2017-08-25 15:58:02,757 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T414_UserDynamic\T414_UserDynamic_03\testure\T414_UserDynamic_03NormalTest.csv
+教╘\code\\pySuitTest\\test_case\\BoardGameApiTest\\T414_UserDynamic\\config.properties', 'passwordInfo': 'http://10.225.136.162', 'dbType': None, 'loginUrl': 'http://10.225.136.162', 'dbPassword': '', 'configParase': <lib.configUtil.configParser object at 0x0000000003478D30>, 'reomveUrl': 'http://10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8'}
+2017-08-25 15:58:02,757 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T414_UserDynamic\T414_UserDynamic_03\testure\T414_UserDynamic_03NormalTest.csv

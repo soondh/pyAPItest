@@ -1,0 +1,40 @@
+2017-08-22 15:27:19,239 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-08-22 15:27:19,240 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-08-22 15:27:19,241 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-08-22 15:27:19,243 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T106_ClubUsers\config.properties
+2017-08-22 15:27:19,248 - ApiTestSuit - DEBUG - 加载配置文件成功...{'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'password': '//10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'dbUsername': 'ecprodprod', 'loginUrl': 'http://10.225.136.162', 'dbType': None, 'passwordInfo': 'http://10.225.136.162', 'reomveUrl': 'http://10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000043EBE48>, 'dbPassword': '', 'configPath': 'E:\\sgs_QA\\桌游平台\\code\\pySuitTest\\test_case\\BoardGameApiTest\\T106_ClubUsers\\config.properties', 'username': '//10.225.136.162'}
+2017-08-22 15:27:19,250 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T106_ClubUsers\T106_ClubUsers_00\testure\T106_ClubUsers_00NormalTest.csv
+2017-08-22 15:27:46,420 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['verifyReCode', 'isRun', 'cd', 'paramUrl.club_id', 'priority', 'caseId', 'httpType', 'apiPath', 'paramUrl.page', 'caseDesc'])
+2017-08-22 15:27:46,422 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['verifyReCode', 'isRun', 'cd', 'paramUrl.club_id', 'priority', 'caseId', 'httpType', 'apiPath', 'paramUrl.page', 'caseDesc'])
+2017-08-22 15:27:51,612 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['verifyReCode', 'isRun', 'cd', 'paramUrl.club_id', 'priority', 'caseId', 'httpType', 'apiPath', 'paramUrl.page', 'caseDesc'])
+2017-08-22 15:27:51,615 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['verifyReCode', 'isRun', 'cd', 'paramUrl.club_id', 'priority', 'caseId', 'httpType', 'apiPath', 'paramUrl.page', 'caseDesc'])
+2017-08-22 15:27:55,771 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'isNeedLogin': True, 'caseId': '01', 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'exceptRetCode': 200, 'httpSendHeaders': {}, 'retMapDbAssert': None, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x0000000003D89978>, 'retMapJsonAssert': None, 'httpType': 'GET', 'expectCd': '0', 'caseDesc': '', 'mapSendParam': {}, 'verfiyJson': None, 'httpSendUrl': '/club/users?&page=1&club_id=6', 'priority': 1, 'mapPostUrlParam': {'page': '1', 'club_id': '6'}, 'strSendText': None, 'caseNum': 1, 'logger': <logging.Logger object at 0x0000000003D897B8>, 'isRun': True, 'csvList': None, 'mapHttpHeadParam': {}, 'apiPath': '/club/users?', 'mapUserParam': {'cd': '0', 'paramUrl.page': '1', 'paramUrl.club_id': '6'}, 'mapInsertDb': None}...
+2017-08-22 15:27:55,773 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-08-22 15:27:55,775 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-08-22 15:27:55,782 - ApiTestSuit - INFO - #########################　Begin Test Method　#####################################
+2017-08-22 15:27:55,783 - ApiTestSuit - DEBUG - start run test....T106_ClubUsers_00NormalTest
+2017-08-22 15:27:55,784 - ApiTestSuit - DEBUG - 
+2017-08-22 15:27:55,785 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-08-22 15:27:55,786 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-08-22 15:27:56,631 - ApiTestSuit - INFO - before HttpTest in this..............
+2017-08-22 15:27:57,315 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-08-22 15:27:57,317 - ApiTestSuit - DEBUG - 运行用例description:
+2017-08-22 15:27:57,319 - ApiTestSuit - DEBUG - 开始登录....
+2017-08-22 15:27:57,320 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-08-22 15:27:57,321 - ApiTestSuit - INFO - 开始执行http方法....
+2017-08-22 15:27:57,323 - httpRequest - DEBUG - requestGet...url: http://10.225.136.162/club/users?&page=1&club_id=6 , headers {}
+2017-08-22 15:27:57,352 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-08-22 15:27:57,670 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "GET /club/users?&page=1&club_id=6 HTTP/1.1" 200 None
+2017-08-22 15:27:57,685 - httpRequest - DEBUG - requestGet response...url: http://10.225.136.162/club/users?&page=1&club_id=6 , body {"cd":"0","msg":"","data":[{"user_id":225,"nickname":"\u5468\u6cf0","user_img":"http:\/\/10.225.136.162\/upload\/userImage\/7e9753f70ee91d146f2226d5f2255c1d.jpg","rank":1},{"user_id":246,"nickname":"","user_img":"","rank":0},{"user_id":243,"nickname":"","user_img":"","rank":0},{"user_id":244,"nickname":"","user_img":"","rank":0},{"user_id":245,"nickname":"\u9c81\u8083","user_img":"http:\/\/10.225.136.162\/upload\/userImage\/43a1be2d02ceb53b1198f0ae76365d47.jpg","rank":0},{"user_id":250,"nickname":"","user_img":"","rank":0},{"user_id":254,"nickname":"","user_img":"","rank":0},{"user_id":255,"nickname":"","user_img":"","rank":0},{"user_id":259,"nickname":"","user_img":"","rank":0},{"user_id":252,"nickname":"","user_img":"","rank":0}]}
+2017-08-22 15:27:57,687 - ApiTestSuit - INFO - 执行完毕....
+2017-08-22 15:27:58,349 - ApiTestSuit - INFO - 状态码对比成功....200
+y {"cd":"0","msg":"","data":[{"user_id":225,"nickname":"\u5468\u6cf0","user_img":"http:\/\/10.225.136.162\/upload\/userImage\/7e9753f70ee91d146f2226d5f2255c1d.jpg","rank":1},{"user_id":246,"nickname":"","user_img":"","rank":0},{"user_id":243,"nickname":"","user_img":"","rank":0},{"user_id":244,"nickname":"","user_img":"","rank":0},{"user_id":245,"nickname":"\u9c81\u8083","user_img":"http:\/\/10.225.136.162\/upload\/userImage\/43a1be2d02ceb53b1198f0ae76365d47.jpg","rank":0},{"user_id":250,"nickname":"","user_img":"","rank":0},{"user_id":254,"nickname":"","user_img":"","rank":0},{"user_id":255,"nickname":"","user_img":"","rank":0},{"user_id":259,"nickname":"","user_img":"","rank":0},{"user_id":252,"nickname":"","user_img":"","rank":0}]}
+2017-08-22 15:27:57,687 - ApiTestSuit - INFO - 执行完毕....
+2017-08-22 15:27:58,349 - ApiTestSuit - INFO - 状态码对比成功....200

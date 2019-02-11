@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,cd,paramUrl.user_id,paramUrl.name,paramUrl.game_id,paramUrl.img_url,paramUrl.content,paramUrl.province,paramUrl.city,paramUrl.district,paramUrl.phone
+01,,true,1,post,/club/create?,200,0,735,0822143900,1,1,heihei,浙江省,杭州市,西湖区,18758113455

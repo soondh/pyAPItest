@@ -1,0 +1,19 @@
+2017-07-24 15:24:51,883 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 ，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-24 15:24:51,883 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-24 15:24:51,883 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-24 15:24:51,883 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T105_ClubItem\T105_ClubItem_00\../config.properties
+2017-07-24 15:24:51,884 - ApiTestSuit - DEBUG - 加载配置文件成功...{'loginUrl': '', 'dbUsername': 'ecprodprod', 'password': 'xxxx', 'dbPassword': '', 'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T105_ClubItem\\T105_ClubItem_00\\../config.properties', 'dbType': None, 'reomveUrl': 'xxxx', 'passwordInfo': 'password:xxxx', 'configParase': <lib.configUtil.configParser object at 0x000000000389B160>, 'usernameInfo': 'account:xxxxx', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'username': 'xxxxx'}
+2017-07-24 15:24:51,884 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T105_ClubItem\T105_ClubItem_00\testure/T105_ClubItem_00NormalTest.csv
+2017-07-24 15:24:51,885 - ApiTestSuit - WARNING - csv数据文件数据为空...
+2017-07-24 15:24:51,885 - ApiTestSuit - WARNING - csv数据为空....退出
+2017-07-24 15:24:51,885 - T105_ClubItem_00NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-24 15:24:51,885 - ApiTestSuit - DEBUG - start run test....T105_ClubItem_00NormalTest
+2017-07-24 15:24:51,885 - ApiTestSuit - DEBUG - 
+2017-07-24 15:24:51,885 - ApiTestSuit - STEP - 开始运行测试用例.....共有0个测试用例
+2017-07-24 15:24:51,885 - T105_ClubItem_00NormalTest - INFO - #################################　End Test　######################################

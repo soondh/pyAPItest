@@ -1,0 +1,1 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,paramUrl.game_id,paramUrl.province,paramUrl.city,paramUrl.district,paramUrl.page,cd01,,true,01,post,/club/fuzzySearch?,200,1,云南省,保山市,市辖区,1,0

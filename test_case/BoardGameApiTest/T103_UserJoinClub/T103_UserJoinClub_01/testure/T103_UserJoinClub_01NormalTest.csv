@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,paramUrl.user_id
+01,,true,1,get,/userJoinClub?,200,391

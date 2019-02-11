@@ -1,0 +1,50 @@
+2017-08-25 15:24:42,571 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-08-25 15:24:42,572 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-08-25 15:24:42,572 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-08-25 15:24:42,572 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T414_UserDynamic\config.properties
+2017-08-25 15:24:42,573 - ApiTestSuit - DEBUG - 加载配置文件成功...{'dbUsername': 'ecprodprod', 'passwordInfo': 'http://10.225.136.162', 'password': '//10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'reomveUrl': 'http://10.225.136.162', 'dbType': None, 'configPath': 'E:\\sgs_QA\\桌游平台\\code\\pySuitTest\\test_case\\BoardGameApiTest\\T414_UserDynamic\\config.properties', 'dbPassword': '', 'username': '//10.225.136.162', 'loginUrl': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000034F8D30>}
+2017-08-25 15:24:42,573 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T414_UserDynamic\T414_UserDynamic_02\testure\T414_UserDynamic_02NormalTest.csv
+2017-08-25 15:24:42,574 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['paramUrl.page', 'caseDesc', 'caseId', 'httpType', 'isRun', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'priority', 'cd'])
+2017-08-25 15:24:42,574 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['paramUrl.page', 'caseDesc', 'caseId', 'httpType', 'isRun', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'priority', 'cd'])
+2017-08-25 15:24:42,574 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['paramUrl.page', 'caseDesc', 'caseId', 'httpType', 'isRun', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'priority', 'cd'])
+2017-08-25 15:24:42,574 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['paramUrl.page', 'caseDesc', 'caseId', 'httpType', 'isRun', 'verifyReCode', 'paramUrl.user_id', 'apiPath', 'priority', 'cd'])
+2017-08-25 15:24:42,574 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'strSendText': None, 'caseId': '01', 'httpSendHeaders': {}, 'caseDesc': '', 'caseNum': 1, 'priority': 1, 'expectCd': '0', 'mapPostUrlParam': {'user_id': '745', 'page': '1'}, 'retMapJsonAssert': None, 'httpType': 'GET', '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000034EFE10>, 'exceptRetCode': 200, 'isRun': True, 'csvList': None, 'mapInsertDb': None, 'mapUserParam': {'paramUrl.user_id': '745', 'cd': '0', 'paramUrl.page': '1'}, 'logger': <logging.Logger object at 0x00000000034F8E80>, 'verfiyJson': None, 'retMapDbAssert': None, 'mapHttpHeadParam': {}, 'httpSendUrl': '/user/dynamic?&user_id=745&page=1', 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'apiPath': '/user/dynamic?', 'isNeedLogin': True, 'mapSendParam': {}}...
+2017-08-25 15:24:42,575 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-08-25 15:24:42,575 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-08-25 15:24:42,576 - ApiTestSuit - INFO - #########################　Begin Test Method　#####################################
+2017-08-25 15:24:42,576 - ApiTestSuit - DEBUG - start run test....T414_UserDynamic_02NormalTest
+2017-08-25 15:24:42,576 - ApiTestSuit - DEBUG - 
+2017-08-25 15:24:42,576 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-08-25 15:24:42,576 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-08-25 15:24:42,576 - ApiTestSuit - INFO - before HttpTest in this..............
+2017-08-25 15:24:42,576 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-08-25 15:24:42,576 - ApiTestSuit - DEBUG - 运行用例description:
+2017-08-25 15:24:42,577 - ApiTestSuit - DEBUG - 开始登录....
+2017-08-25 15:24:42,577 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-08-25 15:24:42,577 - ApiTestSuit - INFO - 开始执行http方法....
+2017-08-25 15:24:42,577 - httpRequest - DEBUG - requestGet...url: http://10.225.136.162/user/dynamic?&user_id=745&page=1 , headers {}
+2017-08-25 15:24:42,582 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-08-25 15:24:42,922 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "GET /user/dynamic?&user_id=745&page=1 HTTP/1.1" 200 None
+2017-08-25 15:24:42,924 - httpRequest - DEBUG - requestGet response...url: http://10.225.136.162/user/dynamic?&user_id=745&page=1 , body {"cd":"0","msg":"","data":[{"dynamic_id":122,"content":"\u8bf7\u95ee","file_type":1,"file_url":"http:\/\/10.225.136.162\/upload\/dynamic_img\/7477d2e64cb258a41b77aeb392342469.jpg","minFile_url":"http:\/\/10.225.136.162\/upload\/dynamic_img\/7477d2e64cb258a41b77aeb392342469.jpg","created_at":"2017-08-25 15:14:40","comment_number":0,"user_id":745,"view_number":1,"nickname":"","img_url":"","is_like":null,"comment":[]},{"dynamic_id":121,"content":"\uff01@12!@ASDasd","file_type":0,"file_url":"","minFile_url":"","created_at":"2017-08-25 15:13:46","comment_number":0,"user_id":745,"view_number":2,"nickname":"","img_url":"","is_like":null,"comment":[]}]}
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 执行完毕....
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 消息码对比成功....0
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - After HttpTest in this...............
+2017-08-25 15:24:42,925 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-08-25 15:24:42,925 - ApiTestSuit - INFO - #################################　End Test　######################################
+ser_id":745,"view_number":1,"nickname":"","img_url":"","is_like":null,"comment":[]},{"dynamic_id":121,"content":"\uff01@12!@ASDasd","file_type":0,"file_url":"","minFile_url":"","created_at":"2017-08-25 15:13:46","comment_number":0,"user_id":745,"view_number":2,"nickname":"","img_url":"","is_like":null,"comment":[]}]}
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 执行完毕....
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - 消息码对比成功....0
+2017-08-25 15:24:42,924 - ApiTestSuit - INFO - After HttpTest in this...............
+2017-08-25 15:24:42,925 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-08-25 15:24:42,925 - ApiTestSuit - INFO - #################################　End Test　######################################

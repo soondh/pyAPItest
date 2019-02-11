@@ -1,0 +1,41 @@
+2017-07-24 10:56:10,749 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 ，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-24 10:56:10,749 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-24 10:56:10,750 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-24 10:56:10,750 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T104_ClubFuzzySearch\T104_ClubFuzzySearch_00\../config.properties
+2017-07-24 10:56:10,753 - ApiTestSuit - DEBUG - 加载配置文件成功...{'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T104_ClubFuzzySearch\\T104_ClubFuzzySearch_00\\../config.properties', 'reomveUrl': 'http://10.225.136.162', 'password': '//10.225.136.162', 'passwordInfo': 'http://10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'usernameInfo': 'http://10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000038AA208>, 'loginUrl': 'http://10.225.136.162', 'dbUsername': 'ecprodprod', 'username': '//10.225.136.162', 'dbType': None, 'dbPassword': ''}
+2017-07-24 10:56:10,753 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T104_ClubFuzzySearch\T104_ClubFuzzySearch_00\testure/T104_ClubFuzzySearch_00NormalTest.csv
+2017-07-24 10:56:10,755 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['httpType', 'paramUrl.city', 'isRun', 'paramUrl.page', 'paramUrl.province', 'paramUrl.game_id', 'priority', 'caseId', 'paramUrl.district', 'apiPath', 'verifyReCode', 'caseDesc'])
+2017-07-24 10:56:10,755 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['httpType', 'paramUrl.city', 'isRun', 'paramUrl.page', 'paramUrl.province', 'paramUrl.game_id', 'priority', 'caseId', 'paramUrl.district', 'apiPath', 'verifyReCode', 'caseDesc'])
+2017-07-24 10:56:10,757 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['httpType', 'paramUrl.city', 'isRun', 'paramUrl.page', 'paramUrl.province', 'paramUrl.game_id', 'priority', 'caseId', 'paramUrl.district', 'apiPath', 'verifyReCode', 'caseDesc'])
+2017-07-24 10:56:10,757 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['httpType', 'paramUrl.city', 'isRun', 'paramUrl.page', 'paramUrl.province', 'paramUrl.game_id', 'priority', 'caseId', 'paramUrl.district', 'apiPath', 'verifyReCode', 'caseDesc'])
+2017-07-24 10:56:10,758 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'httpType': 'POST', 'caseNum': 1, 'isRun': True, 'strSendText': None, 'retMapJsonAssert': None, 'mapUserParam': {'paramUrl.city': '', 'paramUrl.province': '', 'paramUrl.game_id': '0', 'paramUrl.district': '', 'paramUrl.page': '1'}, 'caseId': '01', 'apiPath': '/club/fuzzySearch?', '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000038AA438>, 'caseDesc': '', 'mapHttpHeadParam': {}, 'isNeedLogin': True, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'exceptRetCode': 200, 'retMapDbAssert': None, 'priority': 1, 'csvList': None, 'httpSendHeaders': {}, 'mapSendParam': {}, 'mapInsertDb': None, 'verfiyJson': None, 'httpSendUrl': '/club/fuzzySearch?&province=&game_id=0&city=&district=&page=1', 'mapPostUrlParam': {'province': '', 'game_id': '0', 'city': '', 'district': '', 'page': '1'}}...
+2017-07-24 10:56:10,758 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-07-24 10:56:10,758 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-07-24 10:56:10,761 - T104_ClubFuzzySearch_00NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-24 10:56:10,761 - ApiTestSuit - DEBUG - start run test....T104_ClubFuzzySearch_00NormalTest
+2017-07-24 10:56:10,761 - ApiTestSuit - DEBUG - 
+2017-07-24 10:56:10,762 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-07-24 10:56:10,762 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-07-24 10:56:10,762 - T104_ClubFuzzySearch_00NormalTest - INFO - before HttpTest in this..............
+2017-07-24 10:56:10,762 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-07-24 10:56:10,762 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-24 10:56:10,763 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-24 10:56:10,763 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-24 10:56:10,763 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-24 10:56:10,763 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/fuzzySearch?&province=&game_id=0&city=&district=&page=1 , entity: None, headers {}
+2017-07-24 10:56:10,773 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-07-24 10:56:11,046 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/fuzzySearch?&province=&game_id=0&city=&district=&page=1 HTTP/1.1" 200 None
+2017-07-24 10:56:11,048 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/fuzzySearch?&province=&game_id=0&city=&district=&page=1 , entity: {"cd":"0","msg":"","data":[]}
+2017-07-24 10:56:11,048 - ApiTestSuit - INFO - 执行完毕....
+2017-07-24 10:56:11,048 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-07-24 10:56:11,048 - T104_ClubFuzzySearch_00NormalTest - INFO - After HttpTest in this...............
+2017-07-24 10:56:11,048 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-07-24 10:56:11,048 - T104_ClubFuzzySearch_00NormalTest - INFO - #################################　End Test　######################################

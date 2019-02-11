@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,paramUrl.user_id,paramUrl.club_id,paramUrl.content
+01,,true,1,post,/application/create?,200,391,83,test

@@ -1,0 +1,4 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,cd,paramUrl.user_id,paramUrl.name,paramUrl.game_id,paramUrl.img_url,paramUrl.content,paramUrl.province,paramUrl.city,paramUrl.district,paramUrl.phone
+01,,true,1,post,/club/create?,200,0,729,0822141811,1,1,heihei,浙江省,杭州市,西湖区,18758113455
+02,,true,1,post,/club/create?,200,2,729,0822141811,2,1,heihei,浙江省,杭州市,西湖区,18758113455
+03,,true,1,post,/club/create?,200,2,729,0822141811,3,1,heihei,浙江省,杭州市,西湖区,18758113455

@@ -1,0 +1,41 @@
+2017-07-24 10:47:20,509 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 ，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-07-24 10:47:20,510 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-07-24 10:47:20,510 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-07-24 10:47:20,510 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T104_ClubFuzzySearch\T104_ClubFuzzySearch_00\../config.properties
+2017-07-24 10:47:20,511 - ApiTestSuit - DEBUG - 加载配置文件成功...{'dbPassword': '', 'reomveUrl': 'http://10.225.136.162', 'configPath': 'E:\\Workspace\\APITest\\pySuitTest\\test_case\\BoardGameApiTest\\T104_ClubFuzzySearch\\T104_ClubFuzzySearch_00\\../config.properties', 'username': '//10.225.136.162', 'dbType': None, 'dbUsername': 'ecprodprod', 'password': '//10.225.136.162', 'configParase': <lib.configUtil.configParser object at 0x00000000038FA208>, 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8', 'passwordInfo': 'http://10.225.136.162', 'loginUrl': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162'}
+2017-07-24 10:47:20,511 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\Workspace\APITest\pySuitTest\test_case\BoardGameApiTest\T104_ClubFuzzySearch\T104_ClubFuzzySearch_00\testure/T104_ClubFuzzySearch_00NormalTest.csv
+2017-07-24 10:47:20,511 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['priority', 'paramUrl.city', 'paramUrl.page', 'paramUrl.game_id', 'caseDesc', 'paramUrl.province', 'caseId', 'apiPath', 'isRun', 'verifyReCode', 'httpType', 'paramUrl.district'])
+2017-07-24 10:47:20,512 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['priority', 'paramUrl.city', 'paramUrl.page', 'paramUrl.game_id', 'caseDesc', 'paramUrl.province', 'caseId', 'apiPath', 'isRun', 'verifyReCode', 'httpType', 'paramUrl.district'])
+2017-07-24 10:47:20,512 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['priority', 'paramUrl.city', 'paramUrl.page', 'paramUrl.game_id', 'caseDesc', 'paramUrl.province', 'caseId', 'apiPath', 'isRun', 'verifyReCode', 'httpType', 'paramUrl.district'])
+2017-07-24 10:47:20,512 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['priority', 'paramUrl.city', 'paramUrl.page', 'paramUrl.game_id', 'caseDesc', 'paramUrl.province', 'caseId', 'apiPath', 'isRun', 'verifyReCode', 'httpType', 'paramUrl.district'])
+2017-07-24 10:47:20,512 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'caseNum': 1, 'caseId': '01', 'mapSendParam': {}, 'verfiyJson': None, 'isRun': True, 'exceptRetCode': 200, 'isNeedLogin': True, 'strSendText': None, 'httpSendHeaders': {}, 'httpSendUrl': '/club/fuzzySearch?&province=0&district=0&game_id=0&page=1&city=0', 'priority': 1, 'retMapJsonAssert': None, 'retMapDbAssert': None, 'mapInsertDb': None, 'apiPath': '/club/fuzzySearch?', 'mapHttpHeadParam': {}, 'caseDesc': '', 'csvList': None, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000038FA5F8>, 'mapUserParam': {'paramUrl.city': '0', 'paramUrl.game_id': '0', 'paramUrl.district': '0', 'paramUrl.province': '0', 'paramUrl.page': '1'}, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'mapPostUrlParam': {'province': '0', 'district': '0', 'game_id': '0', 'page': '1', 'city': '0'}, 'httpType': 'POST'}...
+2017-07-24 10:47:20,512 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-07-24 10:47:20,512 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-07-24 10:47:20,513 - T104_ClubFuzzySearch_00NormalTest - INFO - #########################　Begin Test Method　#####################################
+2017-07-24 10:47:20,513 - ApiTestSuit - DEBUG - start run test....T104_ClubFuzzySearch_00NormalTest
+2017-07-24 10:47:20,513 - ApiTestSuit - DEBUG - 
+2017-07-24 10:47:20,513 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-07-24 10:47:20,513 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-07-24 10:47:20,513 - T104_ClubFuzzySearch_00NormalTest - INFO - before HttpTest in this..............
+2017-07-24 10:47:20,514 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-07-24 10:47:20,514 - ApiTestSuit - DEBUG - 运行用例description:
+2017-07-24 10:47:20,514 - ApiTestSuit - DEBUG - 开始登录....
+2017-07-24 10:47:20,514 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-07-24 10:47:20,514 - ApiTestSuit - INFO - 开始执行http方法....
+2017-07-24 10:47:20,514 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/fuzzySearch?&province=0&district=0&game_id=0&page=1&city=0 , entity: None, headers {}
+2017-07-24 10:47:20,517 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-07-24 10:47:20,789 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/fuzzySearch?&province=0&district=0&game_id=0&page=1&city=0 HTTP/1.1" 200 None
+2017-07-24 10:47:20,794 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/fuzzySearch?&province=0&district=0&game_id=0&page=1&city=0 , entity: {"cd":"0","msg":"","data":[{"club_id":113,"club_name":"0707173605","member_num":3,"club_img":"1","user_name":"07071736","club_content":"heihei","game_name":"\u5361\u5766\u5c9b","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a"},{"club_id":154,"club_name":"071118050","member_num":3,"club_img":"1","user_name":"07111805","club_content":"heihei","game_name":"\u4e09\u56fd\u6740","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a"},{"club_id":140,"club_name":"0711102705","member_num":2,"club_img":"1","user_name":"07111027","club_content":"heihei","game_name":"\u5361\u5766\u5c9b","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a"},{"club_id":42,"club_name":"\u8bb0\u5f97","member_num":1,"club_img":"3123","user_name":"\u5468\u6768\u6d4b\u8bd5\u8d26\u53f7","club_content":"\u8fd9\u91cc\u662f22222\u5bb9","game_name":"\u4ea4\u53c9\u8f68\u9053","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a"},{"club_id":96,"club_name":"\u4ff1\u4e50\u90e8","member_num":1,"club_img":"2","user_name":"\u5468\u6768\u6d4b\u8bd5\u8d26\u53f7","club_content":"\u676d\u5dde\u4ff1\u4e50\u90e8","game_name":"\u5361\u80e1\u7eb3","city":"\u676d\u5dde\u5e02","district":"\u897f\u6e56\u533a"}]}
+2017-07-24 10:47:20,794 - ApiTestSuit - INFO - 执行完毕....
+2017-07-24 10:47:20,794 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-07-24 10:47:20,795 - T104_ClubFuzzySearch_00NormalTest - INFO - After HttpTest in this...............
+2017-07-24 10:47:20,795 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-07-24 10:47:20,795 - T104_ClubFuzzySearch_00NormalTest - INFO - #################################　End Test　######################################

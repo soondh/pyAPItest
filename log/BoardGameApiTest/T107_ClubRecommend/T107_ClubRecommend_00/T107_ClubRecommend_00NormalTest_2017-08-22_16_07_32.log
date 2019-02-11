@@ -1,0 +1,52 @@
+2017-08-22 16:07:33,642 - ApiTestSuit - STEP - 
+                            Step1 初始化运行上下文对象 initContext
+                            Step2 加载测试配置文件config，包含登陆信息、域名信息等
+                            Step3 加载测试脚本的数据csv文件，并且生成测试用例,每一个用例包含一个context对象
+                            Step4 根据生成测试用例调用runHttpTest
+                            Step5 根据csv文件对比返回结果
+        
+2017-08-22 16:07:33,643 - ApiTestSuit - STEP - 初始化上下文对象....
+2017-08-22 16:07:33,644 - ApiTestSuit - DEBUG - 创建全局runContext对象.....
+2017-08-22 16:07:33,644 - ApiTestSuit - DEBUG - 初始化配置数据,生成configData对象...E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T107_ClubRecommend\config.properties
+2017-08-22 16:07:33,655 - ApiTestSuit - DEBUG - 加载配置文件成功...{'dbType': None, 'reomveUrl': 'http://10.225.136.162', 'passwordInfo': 'http://10.225.136.162', 'usernameInfo': 'http://10.225.136.162', 'configPath': 'E:\\sgs_QA\\桌游平台\\code\\pySuitTest\\test_case\\BoardGameApiTest\\T107_ClubRecommend\\config.properties', 'configParase': <lib.configUtil.configParser object at 0x00000000034C6CF8>, 'dbUsername': 'ecprodprod', 'password': '//10.225.136.162', 'dbPassword': '', 'username': '//10.225.136.162', 'loginUrl': 'http://10.225.136.162', 'dbUrl': 'jdbc:mysql://xxx.xxx.xxx.xxx:3306/ecprodprod?useUnicode=true&amp;characterEncoding=utf8'}
+2017-08-22 16:07:33,656 - ApiTestSuit - STEP - 加载csv数据文件，生成prepareDataList对象....E:\sgs_QA\桌游平台\code\pySuitTest\test_case\BoardGameApiTest\T107_ClubRecommend\T107_ClubRecommend_00\testure\T107_ClubRecommend_00NormalTest.csv
+2017-08-22 16:07:33,657 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['apiPath', 'caseDesc', 'paramUrl.city', 'paramUrl.district', 'paramUrl.province', 'paramUrl.user_id', 'cd', 'isRun', 'caseId', 'priority', 'httpType', 'verifyReCode'])
+2017-08-22 16:07:33,658 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['apiPath', 'caseDesc', 'paramUrl.city', 'paramUrl.district', 'paramUrl.province', 'paramUrl.user_id', 'cd', 'isRun', 'caseId', 'priority', 'httpType', 'verifyReCode'])
+2017-08-22 16:07:33,659 - csvutil - WARNING - verfiyJson Dict param not in csvFile....dict_keys(['apiPath', 'caseDesc', 'paramUrl.city', 'paramUrl.district', 'paramUrl.province', 'paramUrl.user_id', 'cd', 'isRun', 'caseId', 'priority', 'httpType', 'verifyReCode'])
+2017-08-22 16:07:33,660 - csvutil - WARNING - paramBody param not in csvFile....dict_keys(['apiPath', 'caseDesc', 'paramUrl.city', 'paramUrl.district', 'paramUrl.province', 'paramUrl.user_id', 'cd', 'isRun', 'caseId', 'priority', 'httpType', 'verifyReCode'])
+2017-08-22 16:07:33,660 - ApiTestSuit - DEBUG - 加载csv数据文件成功....{'logger': <logging.Logger object at 0x00000000034C6E48>, 'caseDesc': '', 'mapInsertDb': None, 'exceptRetCode': 200, 'csvList': None, 'mapPostUrlParam': {'province': '浙江省', 'user_id': '24', 'city': '杭州市', 'district': '西湖区'}, 'strSendText': None, 'compareJsonType': ['OnlyKey', 'ALL', 'R'], 'priority': 1, 'isRun': True, 'httpSendUrl': '/club/recommend?&province=浙江省&user_id=24&city=杭州市&district=西湖区', 'httpType': 'POST', 'apiPath': '/club/recommend?', 'caseNum': 1, 'isNeedLogin': True, 'mapSendParam': {}, '_prepareDataUtil': <lib.csvUtil.csvutil object at 0x00000000034C6F60>, 'httpSendHeaders': {}, 'verfiyJson': None, 'retMapJsonAssert': None, 'caseId': '01', 'retMapDbAssert': None, 'mapUserParam': {'paramUrl.district': '西湖区', 'paramUrl.user_id': '24', 'paramUrl.city': '杭州市', 'paramUrl.province': '浙江省', 'cd': '0'}, 'expectCd': '0', 'mapHttpHeadParam': {}}...
+2017-08-22 16:07:33,661 - ApiTestSuit - DEBUG - 创建全局runContext对象成功.....包含csv数据、配置数据信息...
+2017-08-22 16:07:33,661 - ApiTestSuit - DEBUG - 创建运行的http_request对象.....httpClient
+
+2017-08-22 16:07:33,664 - ApiTestSuit - INFO - #########################　Begin Test Method　#####################################
+2017-08-22 16:07:33,664 - ApiTestSuit - DEBUG - start run test....T107_ClubRecommend_00NormalTest
+2017-08-22 16:07:33,665 - ApiTestSuit - DEBUG - 
+2017-08-22 16:07:33,665 - ApiTestSuit - STEP - 开始运行测试用例.....共有1个测试用例
+2017-08-22 16:07:33,665 - ApiTestSuit - STEP - 开始运行第 1 个测试用例
+2017-08-22 16:07:33,666 - ApiTestSuit - INFO - before HttpTest in this..............
+2017-08-22 16:07:33,666 - ApiTestSuit - DEBUG - 运行用例id:01
+2017-08-22 16:07:33,667 - ApiTestSuit - DEBUG - 运行用例description:
+2017-08-22 16:07:33,667 - ApiTestSuit - DEBUG - 开始登录....
+2017-08-22 16:07:33,668 - ApiTestSuit - DEBUG - 登录成功....返回:None
+2017-08-22 16:07:33,668 - ApiTestSuit - INFO - 开始执行http方法....
+2017-08-22 16:07:33,669 - httpRequest - DEBUG - requestPost...url: http://10.225.136.162/club/recommend?&province=浙江省&user_id=24&city=杭州市&district=西湖区 , entity: None, headers {}
+2017-08-22 16:07:33,678 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 10.225.136.162
+2017-08-22 16:07:33,998 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/recommend?&province=%E6%B5%99%E6%B1%9F%E7%9C%81&user_id=24&city=%E6%9D%AD%E5%B7%9E%E5%B8%82&district=%E8%A5%BF%E6%B9%96%E5%8C%BA HTTP/1.1" 200 None
+2017-08-22 16:07:34,002 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/recommend?&province=浙江省&user_id=24&city=杭州市&district=西湖区 , entity: {"cd":"0","msg":"","data":[]}
+2017-08-22 16:07:34,003 - ApiTestSuit - INFO - 执行完毕....
+2017-08-22 16:07:34,003 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - 消息码对比成功....0
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - After HttpTest in this...............
+2017-08-22 16:07:34,004 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - #################################　End Test　######################################
+1): 10.225.136.162
+2017-08-22 16:07:33,998 - urllib3.connectionpool - DEBUG - http://10.225.136.162:80 "POST /club/recommend?&province=%E6%B5%99%E6%B1%9F%E7%9C%81&user_id=24&city=%E6%9D%AD%E5%B7%9E%E5%B8%82&district=%E8%A5%BF%E6%B9%96%E5%8C%BA HTTP/1.1" 200 None
+2017-08-22 16:07:34,002 - httpRequest - DEBUG - requestPost response...url: http://10.225.136.162/club/recommend?&province=浙江省&user_id=24&city=杭州市&district=西湖区 , entity: {"cd":"0","msg":"","data":[]}
+2017-08-22 16:07:34,003 - ApiTestSuit - INFO - 执行完毕....
+2017-08-22 16:07:34,003 - ApiTestSuit - INFO - 状态码对比成功....200
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - 消息码对比成功....0
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - After HttpTest in this...............
+2017-08-22 16:07:34,004 - ApiTestSuit - STEP - 运行第 1 个用例完毕....
+
+2017-08-22 16:07:34,004 - ApiTestSuit - INFO - #################################　End Test　######################################

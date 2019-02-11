@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,cd,paramUrl.user_id,paramUrl.content,paramUrl.file_type,paramUrl.file_url,paramUrl.province,paramUrl.city,paramUrl.district,paramUrl.game_id,paramUrl.minFile_url
+01,,true,1,post,/dynamic/send?,200,0,329,123asd!@qwe,0,,浙江省,杭州市,西湖区,1,

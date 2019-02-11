@@ -1,0 +1,2 @@
+caseId,caseDesc,isRun,priority,httpType,apiPath,verifyReCode,paramUrl.user_id,paramUrl.application_id,paramUrl.result
+01,,true,1,post,/application/check?,200,360,60,1
